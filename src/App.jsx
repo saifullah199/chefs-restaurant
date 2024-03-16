@@ -28,14 +28,27 @@ console.log(cooking)
         <h2 className='text-center text-3xl'>Our Recipes</h2>
         <p className='text-center'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br /> Sed maxime fugiat quisquam dolorem velit in?</p>
         <div className="main-container flex justify-around mt-7">
-          <div className="cooking-container">
+          <div className="cooking-container grid grid-cols-2 gap-4">
 
         {
-          cooking.map(cook => <SingleCooking></SingleCooking>)
+          cooking.map(cook => <SingleCooking cooking={cook}></SingleCooking>)
         }
             
 </div>
-          <div className="want-cooking">want to cook</div>
+          <div className="want-cooking">
+            <h3>Want to Cook</h3>
+            <hr />
+            <div>
+              <table className='mx-4'>
+                  <tr className=''>
+                    <th>Name</th>
+                    <th >Time</th>
+                    <th>Calories</th>
+                  </tr>
+              </table>
+            </div>
+          
+          </div>
         </div>
       </div>
     </div>

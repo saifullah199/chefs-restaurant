@@ -1,10 +1,11 @@
 
 
-const SingleCooking = () => {
+const SingleCooking = ({cooking}) => {
+    console.log(cooking)
     return (
         <div>
             <div className="card w-96 bg-base-100 shadow-xl">
-            <figure><img src="https://i.ibb.co/n0S4knX/top-view-baked-pizza-sliced-with-seasonings-white.jpg" alt="Shoes" /></figure>
+            <figure><img src={cooking.recipe_image} alt="Shoes" /></figure>
             <div className="card-body">
             <h2 className="card-title">Spaghetti Bolognese</h2>
             <p>Classic Italian pasta dish with savory meat 
