@@ -1,0 +1,103 @@
+[
+    {
+      "recipe_id": 1,
+      "recipe_name": "Spicy Chicken Stir-Fry",
+      "recipe_image": "https://i.ibb.co/n0S4knX/top-view-baked-pizza-sliced-with-seasonings-white.jpg",
+      "short_description": "A delicious and flavorful chicken stir-fry with a kick of spice.",
+      "ingredients": [
+        "550 g chicken breast, sliced",
+        "2 cloves garlic, minced",
+        "1 red chili, chopped"
+        
+        
+        
+        
+      ],
+      "preparing_time": "25 min",
+      "calories": "320 calories "
+    },
+    {
+      "recipe_id": 2,
+      "recipe_name": "Mango Avocado Salad",
+      "recipe_image": "https://i.ibb.co/16zKZjF/high-angle-asian-food-ingredients-with-copy-space.jpg",
+      "short_description": "A refreshing and healthy salad with mangoes and avocados.",
+      "ingredients": [
+        "2 ripe mangoes, diced",
+        "1/4 cup cilantro leaves, chopped",
+        "Salt and pepper to taste"
+        
+        
+        
+      ],
+      "preparing_time": "15 min",
+      "calories": "180 calories "
+    },
+    {
+      "recipe_id": 3,
+      "recipe_name": "Vegetable Fried Rice",
+      "recipe_image": "https://i.ibb.co/y5xBMb6/2149141352.jpg",
+      "short_description": "A classic and flavorful fried rice loaded with vegetables.",
+      "ingredients": [
+        "2 cups cooked rice, chilled",
+        "2 cloves garlic, minced",
+        "1/4 cup green onions, chopped"
+        
+        
+        
+        
+      ],
+      "preparing_time": "20 min",
+      "calories": "250 calories "
+    },
+    {
+      "recipe_id": 4,
+      "recipe_name": "Lemon Garlic Shrimp Pasta",
+      "recipe_image": "https://i.ibb.co/TKZLHvN/2149141324.jpg",
+      "short_description": "A zesty and flavorful pasta dish with succulent shrimp.",
+      "ingredients": [
+        "300 g shrimp, peeled and deveined",
+        "1/4 cup parsley, chopped",
+        "Salt and pepper to taste"
+        
+       
+        
+        
+      ],
+      "preparing_time": "30 min",
+      "calories": "380 calories "
+    },
+    {
+      "recipe_id": 5,
+      "recipe_name": "Caprese Stuffed Chicken",
+      "recipe_image": "https://i.ibb.co/kyLjqrv/2149141317.jpg",
+      "short_description": "Juicy chicken breasts stuffed with fresh mozzarella, tomatoes, and basil.",
+      "ingredients": [
+        "4 boneless chicken breasts",
+        "Salt and pepper to taste",
+        "2 tomatoes, sliced"
+        
+        
+        
+      ],
+      "preparing_time": "35 min",
+      "calories": "280 calories "
+    },
+    {
+      "recipe_id": 6,
+      "recipe_name": "Chocolate Chip Cookies",
+      "recipe_image": "https://i.ibb.co/bdydNTc/3118.jpg",
+      "short_description": "Classic homemade chocolate chip cookies that are soft and chewy.",
+      "ingredients": [
+        "2 1/4 cups all-purpose flour",
+        "1 cup unsalted butter, softened",
+        "2 cups semisweet chocolate chips"
+        
+        
+        
+        
+      ],
+      "preparing_time": "40 min",
+      "calories": "150 calories "
+    }
+  ]
+  
