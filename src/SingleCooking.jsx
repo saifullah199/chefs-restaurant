@@ -25,7 +25,7 @@ const SingleCooking = ({cooking, handleCart}) => {
     </div>
     <div className="card-actions ">
 
-      <button onClick={()=>handleCart(cooking)} className="btn btn-primary">Want to Cook</button>
+      <button onClick={()=>handleCart(cooking)} className="btn btn-primary">Want to Cook </button>
     </div>
   </div>
 </div>

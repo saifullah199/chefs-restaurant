@@ -5,10 +5,13 @@ import Banner from './Banner'
 import Navbar from './Navbar'
 import { useState } from 'react'
 import SingleCooking from './SingleCooking'
+
+
 function App() {
   
   const [cooking, setCooking]= useState([]);
   const [cart, setCart] =useState([]);
+  // const [items, setItems] = useState([]);
 
 
 useEffect(()=>{
@@ -33,8 +36,15 @@ const handleCart = (p) =>{
 const handlePeoparing = (recipe_id) =>{
   const newCart = cart.filter(item =>item.recipe_id != recipe_id)
   setCart(newCart);
-  console.log(newCart)
+  
+  // const CurrentCooking = cart.map(item=> item.recipe_name = recipe_name)
+  // setItems(CurrentCooking);
 }
+
+// const handleClick = (data) => {
+//   // Update items state with new data
+//   setItems([...items, data]);
+// };
 
 
 
@@ -58,15 +68,16 @@ const handlePeoparing = (recipe_id) =>{
         }
             
 </div>
-          <div>
-            <div className="want-cooking">
-            <h3 className='font-medium'>Want to Cook</h3>
+          <div className="want-cooking">
+            
+          <div >
+            <h3 className='font-medium'>Want to Cook {cart.length}</h3>
             <hr />
             
             <div className='flex gap-16 font-medium'>
-            <p>Name</p>
-            <p>Time</p>
-            <p>Calories</p>
+              <p>Name</p>
+              <p>Time</p>
+              <p>Calories</p>
             </div>
               <div>
                 {
@@ -76,14 +87,15 @@ const handlePeoparing = (recipe_id) =>{
                       <h5 className=''> {item.recipe_name}</h5>
                       <h5> {item.preparing_time}</h5>
                       <h5> {item.calories}</h5>
-                      <button onClick={()=> handlePeoparing(item.recipe_id)} className='btn btn-accent rounded-full'>Preparing</button>
+                      <button onClick={()=> handlePeoparing(item.recipe_id,)} className='btn btn-accent rounded-full'>Preparing</button>
                     </div>
                   ))
                 }
               </div>
           
           </div>
-
+            <div className='currently-cooking'>
+                
             <div>
                 <h3 className='font-medium'>Currently cooking <span> </span> </h3>
                 <hr />
@@ -93,6 +105,9 @@ const handlePeoparing = (recipe_id) =>{
                   <p>Time</p>
                   <p>Calories</p>
                 </div>
+            </div>
+
+                
 
             </div>
           </div>
