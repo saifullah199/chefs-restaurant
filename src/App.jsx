@@ -61,7 +61,8 @@ const handleClick = (data) => {
       </div>
       <div className="mt-5">
         <h2 className='text-center text-3xl'>Our Recipes</h2>
-        <p className='text-center'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br /> Sed maxime fugiat quisquam dolorem velit in?</p>
+        <p className='text-center'>Learn and Master Basic Cooking, Chefs, Daily cooking, <br />
+                        Restaurant Chefs to become an exceptionally well world-class Chef.</p>
         <div className="main-container flex justify-around mt-7">
           <div className="cooking-container grid grid-cols-2 gap-4">
 
