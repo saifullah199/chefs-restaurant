@@ -35,18 +35,20 @@ const handleCart = (p) =>{
   
 }
 const handlePeoparing = (recipe_id) =>{
+  const item = cart.find(item =>item.recipe_id == recipe_id)
   const newCart = cart.filter(item =>item.recipe_id != recipe_id)
   setCart(newCart);
-  
+  console.log(recipe_id)
   // const CurrentCooking = cart.map(item=> item.recipe_name = recipe_name)
   // setItems(CurrentCooking);
+  setItems([...items,item])
 }
 
-const handleClick = (data) => {
-  const CurrentCooking = cart.map(item=> item.recipe_name = item.recipe_name)
-  console.log(CurrentCooking)
-  setItems([...items, data]);
-};
+// const handleClick = (data) => {
+//   const CurrentCooking = cart.map(item=> item.recipe_name = item.recipe_name)
+//   console.log(CurrentCooking)
+//   setItems([...items, data]);
+// };
 
 
 
@@ -76,7 +78,7 @@ const handleClick = (data) => {
           
             <div className='currently-cooking'>
                 
-            <CurrentCooking handleClick={handleClick} items={items} > </CurrentCooking>
+            <CurrentCooking  items={items} > </CurrentCooking>
                 
 
             </div>

@@ -1,11 +1,11 @@
 
 
-const CurrentCooking = ({items,}) => {
+const CurrentCooking = ({items}) => {
   return (
     <div>
 
             <div>
-                <h3 className='font-medium'>Currently cooking <span> </span> </h3>
+                <h3 className='font-medium'>Currently cooking{items.length}  </h3>
                 <hr />
 
                 <div className='flex gap-16 font-medium'>
