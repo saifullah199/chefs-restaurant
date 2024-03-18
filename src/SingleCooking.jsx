@@ -11,7 +11,7 @@ const SingleCooking = ({cooking, handleCart}) => {
             <p>{cooking.short_description}</p>
 <hr />
     <div className='space-y-3'>
-        <h4 className='font-semibold'>Ingredients: 6</h4>
+        <h4 className='font-semibold'>Ingredients: {cooking.ingredients.length}</h4>
         <ul>
           <li> {cooking.ingredients[0] }</li>
           <li>  {cooking.ingredients[1] }</li>

@@ -5,13 +5,14 @@ import Banner from './Banner'
 import Navbar from './Navbar'
 import { useState } from 'react'
 import SingleCooking from './SingleCooking'
-
+import Cart from './Cart'
+import CurrentCooking from './CurrentCooking'
 
 function App() {
   
   const [cooking, setCooking]= useState([]);
   const [cart, setCart] =useState([]);
-  // const [items, setItems] = useState([]);
+  const [items, setItems] = useState([]);
 
 
 useEffect(()=>{
@@ -41,10 +42,11 @@ const handlePeoparing = (recipe_id) =>{
   // setItems(CurrentCooking);
 }
 
-// const handleClick = (data) => {
-//   // Update items state with new data
-//   setItems([...items, data]);
-// };
+const handleClick = (data) => {
+  const CurrentCooking = cart.map(item=> item.recipe_name = item.recipe_name)
+  console.log(CurrentCooking)
+  setItems([...items, data]);
+};
 
 
 
@@ -69,44 +71,11 @@ const handlePeoparing = (recipe_id) =>{
             
 </div>
           <div className="want-cooking">
-            
-          <div >
-            <h3 className='font-medium'>Want to Cook {cart.length}</h3>
-            <hr />
-            
-            <div className='flex gap-16 font-medium'>
-              <p>Name</p>
-              <p>Time</p>
-              <p>Calories</p>
-            </div>
-              <div>
-                {
-                  cart.map((item,index) =>(
-                    <div className='flex gap-2 font-medium'>
-                      <h5>{index+1}</h5>
-                      <h5 className=''> {item.recipe_name}</h5>
-                      <h5> {item.preparing_time}</h5>
-                      <h5> {item.calories}</h5>
-                      <button onClick={()=> handlePeoparing(item.recipe_id,)} className='btn btn-accent rounded-full'>Preparing</button>
-                    </div>
-                  ))
-                }
-              </div>
+            <Cart handlePeoparing={handlePeoparing} cart={cart}></Cart>
           
-          </div>
             <div className='currently-cooking'>
                 
-            <div>
-                <h3 className='font-medium'>Currently cooking <span> </span> </h3>
-                <hr />
-
-                <div className='flex gap-16 font-medium'>
-                  <p>Name</p>
-                  <p>Time</p>
-                  <p>Calories</p>
-                </div>
-            </div>
-
+            <CurrentCooking handleClick={handleClick} items={items} > </CurrentCooking>
                 
 
             </div>

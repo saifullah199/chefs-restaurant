@@ -1,4 +1,6 @@
 
+import { FaRegUser } from "react-icons/fa";
+import { GoSearch } from "react-icons/go";
 
 const Navbar = () => {
     return (
@@ -24,9 +26,13 @@ const Navbar = () => {
       <li><a>Search</a></li>
     </ul>
   </div>
-  <div className="navbar-end">
-  <input type="text" placeholder="search" className="input input-bordered w-full max-w-xs" />
-    {/* <img src="./assets/images/user.png" alt="" /> */}
+  <div className="navbar-end relative">
+  
+  <input type="text" placeholder="search" className="input input-bordered w-full max-w-xs relative" /> 
+  <div className="absolute left-10 top-[22px] flex ">
+    <GoSearch />
+    </div> <button className="btn btn-accent"> <FaRegUser /> </button>
+    
   </div>
 </div>
         </div>
